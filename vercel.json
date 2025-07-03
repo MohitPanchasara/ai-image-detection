@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json",        "use": "@vercel/next"    },
+    { "src": "pages/api/score.py",  "use": "@vercel/python"  }
+  ],
+  "routes": [
+    { "src": "/api/score", "dest": "pages/api/score.py" }
+  ],
+  "functions": {
+    "pages/api/score.py": { "runtime": "python3.10" }
+  }
+}
