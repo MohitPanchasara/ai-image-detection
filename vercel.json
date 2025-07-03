@@ -6,8 +6,5 @@
   ],
   "routes": [
     { "src": "/api/score", "dest": "pages/api/score.py" }
-  ],
-  "functions": {
-    "pages/api/score.py": { "runtime": "python3.10" }
-  }
+  ]
 }
